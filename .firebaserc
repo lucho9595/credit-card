@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "credit-card-ce122": {
+      "hosting": {
+        "credit-cards": [
+          "credit-card-ce122"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "credit-card-ce122"
+  }
+}
