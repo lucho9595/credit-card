@@ -39,7 +39,8 @@ export class CreateCardComponent implements OnInit {
     }
     // console.log(cardData)
     this._cardService.saveCard(cardData).then(() => {
-      console.log('Card save')
+      console.log('Card save');
+      this.forms.reset()
     }, error => {
       console.log(error);
     })
