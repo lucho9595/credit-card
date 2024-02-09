@@ -14,12 +14,12 @@
                 </th>
             </thead>
             <tbody>
-                <tr>
-                    <td>asfdasdasd</td>
-                    <td>asfdasdasd</td>
-                    <td>asfdasdasd</td>
-                    <td><i class="fas fa-pen-to-square text-info"></i></td>
-                    <td><i class="fas fa-trash text-danger"></i></td>
+                <tr *ngFor="let card of listCard">
+                    <td>{{card.headline}}</td>
+                    <td>{{card.cardNumber}}</td>
+                    <td>{{card.expirationDate}}</td>
+                    <td><i (click)="modificationCard(card)" class="fas fa-pen-to-square text-info"></i></td>
+                    <td><i (click)="deleteCard(card.id)" class="fas fa-trash text-danger"></i></td>
                 </tr>
             </tbody>
         </table>

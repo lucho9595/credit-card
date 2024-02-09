@@ -5,3 +5,8 @@
 .red-icon {
     color: rgb(225, 22, 8)
 }
+
+.spinner-border{
+    height:18px;
+    width:18px;
+}
